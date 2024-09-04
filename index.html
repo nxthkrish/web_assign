@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Navneeth Krishna">
+    <meta name="description" content="A personal web page about Navneeth Krishna.">
+    <title>About Navneeth Krishna</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Styles for theatre mode */
+        #theatre-mode {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            padding: 20px;
+        }
+        #theatre-mode video {
+            width: 80%;
+            height: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styles for album cover with audio */
+        #album-cover {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        #album-cover img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Web Page</h1>
+        <a href="https://www.yoursocialmedia.com" target="_blank">
+            <img src="IMG_0675.jpg" alt="Navneeth Krishna" id="profile-pic">
+        </a>
+    </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hi, I'm Navneeth Krishna, a B.Tech graduate in Computer Science from Kerala. My journey in technology has been shaped by a deep curiosity for how things work and a passion for applying theoretical knowledge to practical challenges. Over the years, I've explored various areas of technology, from artificial intelligence to embedded systems, always seeking to innovate and make a tangible impact.
+
+            Although coding isn't my primary focus, I've consistently found ways to integrate my skills into projects that matter. Whether it's diving into artificial neural networks or exploring the potential of smart systems, I'm driven by a desire to push the boundaries of what's possible. As I look to the future, I'm eager to expand my horizons and explore opportunities abroad, where I can continue to grow and contribute meaningfully.</p>
+    </section>
+
+    <section id="bucket-list">
+        <h2>My Bucket List</h2>
+        <table>
+            <tr>
+                <th>Serial Number</th>
+                <th>Items</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>River Rafting</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Go Skydiving</td>
+                <td>Not Completed</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Get a Job</td>
+                <td>Not Completed</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Financial independence</td>
+                <td>Not Completed</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Visit Maldives</td>
+                <td>Not Completed</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Favourite Media</h2>
+
+        <h3>Favourite Movie:</h3>
+        <div id="theatre-mode">
+            <video controls>
+                <source src="Avengers Endgame |  Avengers Assemble  Scenes - IMAX 4K.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <h3>Favourite Song:</h3>
+        <div id="album-cover">
+            <img src="images.jpeg" alt="Big Dawgs Cover">
+            <audio controls>
+                <source src="Big Dawgs_320(PagalWorld.com.so).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <section id="interaction">
+        <h2>Interactive Section</h2>
+        <button onclick="welcomeMessage()">Click Me!</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
